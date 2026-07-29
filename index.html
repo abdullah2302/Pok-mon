@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokimon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> Pokémon Search </h1>
+    <div class="card">
+        <input type="text" placeholder="Search for a Pokémon..." id="searchInput" required>
+        <button id="searchButton" onClick="fetchPokemon()">Fetch Pokimon</button>
+        <button id="randomButton" onClick="fetchRandomPokemon()">Random Pokimon</button>
+        <div id="pokemonContainer">
+            <img id="pokemonImage" src="" alt="Pokémon Image" style="display: none;">
+            <h2 id="pokemonName"></h2>
+             <h3 id="pokemonID" style="display: none;">ID: </h3>
+             <h3 id="base-stats" style="display: none;">Base Stats:</h3>
+
+            <div id="statsContainer"></div>
+            <h3 id="abilitiesTitle" style="display: none;">Abilities:</h3>
+            <ul id="abilitiesList"></ul>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
