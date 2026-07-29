@@ -48,10 +48,14 @@ async function loadPokemonData(apiUrl) {
 }
 
 
+
 function fetchPokemon() {
     const query = searchInput.value.toLowerCase().trim();
+    
     if (query) {
         loadPokemonData(`${url}${query}`);
+    } else {
+        alert('Please enter a Pokémon name or ID.');
     }
 }
 
