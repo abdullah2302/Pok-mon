@@ -31,6 +31,7 @@ async function loadPokemonData(apiUrl) {
             const listItem = document.createElement('li');
             listItem.textContent = item.ability.name;
             abilitiesList.appendChild(listItem);
+           
         });
 
 
@@ -56,7 +57,7 @@ function fetchPokemon() {
 
 
 function fetchRandomPokemon() {
-    const randomId = Math.floor(Math.random() * 898) + 1;
+    const randomId = Math.floor(Math.random() * 1024) + 1;
     loadPokemonData(`${url}${randomId}`);
 }
 
