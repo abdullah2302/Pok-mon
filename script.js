@@ -57,7 +57,7 @@ function fetchPokemon() {
 
 
 function fetchRandomPokemon() {
-    const randomId = Math.floor(Math.random() * 1024) + 1;
+    const randomId = Math.floor(Math.random() * 1025) + 1;
     loadPokemonData(`${url}${randomId}`);
 }
 
